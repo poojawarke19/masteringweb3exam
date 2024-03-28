@@ -1,0 +1,12 @@
+Q3. Demonstrate how to check the account balances with the help of Web3.js. 
+Ans: 1) give command: node
+2)then we need to give require command: const Web3 =require('web3');
+3)then we need to define our RPC URL which we get by login in infura, command for this is:
+   const rpcURL = " "; (we will paste url between double quot)
+4)the next command is: const web3 = new Web3(rpcURL);
+5)then we need to define the address of the accout of which we are checking the balance.
+  command: const address = " ";  (we will paste address between double quot)
+6)then we will give the command: web3.eth.getBalance(address, (err, wei) => { balance =
+web3.utils.fromWei(wei, 'ether') });
+7)to get balance we will give the command: console.log(balance);
+8) it will the exact balance of the given address.
